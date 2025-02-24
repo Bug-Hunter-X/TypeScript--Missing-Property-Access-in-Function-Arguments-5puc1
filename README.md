@@ -1,0 +1,3 @@
+# TypeScript: Missing Property Access in Function Arguments
+
+This example demonstrates a common yet subtle bug in TypeScript where the compiler does not detect missing properties when an object is passed as a function argument.  The function expects an object with specific properties ('x' and 'y'), but if an object is passed without those properties, TypeScript doesn't raise an error during compilation but instead a runtime error will be thrown.
